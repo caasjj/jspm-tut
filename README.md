@@ -13,7 +13,8 @@ Or, to create it from scratch, do:
 5. `npm install jspm`
 6. `jspm init` // again, hit ENTER on all questions
 7. `jspm install bootstrap`
-8. Create your `index.html` and `main.js` as shown/desired
+8. `jspm install css`
+9. Create your `index.html` and `main.js` as shown/desired
 
 You can use any server you like, but `live-server` is really cool, as it has live reload:
 
