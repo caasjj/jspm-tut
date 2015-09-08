@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="jspm_packages/github/twbs/bootstrap@3.3.5/css/bootstrap.css">
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">jspm Bootstrap</h1>
+    <p class="text-center bg-info">Bootstrap loaded!</p>
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+</div>
+
+<script>
+  System.import('main').then(function(mod){
+    console.log(`Loaded ${mod}`);
+    console.log('Module exported functions:')
+    for(var p in mod) {
+      if (typeof mod[p] === 'function') {
+        console.log(`${mod}[${p}]`);
+      }
+    }
+  });
+</script>
+</body>
+</html>
