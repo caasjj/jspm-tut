@@ -1,7 +1,7 @@
-/**
- * Created by developer on 9/8/15.
- */
-import bootstrap from 'bootstrap';
-import 'bootstrap/css/bootstrap.css!';
-
-export { bootstrap };
+define( function () {
+	return {
+		run: function(){
+			return 'Hello World';
+		}
+	};
+});

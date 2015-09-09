@@ -18,14 +18,12 @@
 </div>
 
 <script>
+  System.import('bootstrap/css/bootstrap.css!');
+  System.import('bootstrap');
+
   System.import('main').then(function(mod){
     console.log(`Loaded ${mod}`);
-    console.log('Module exported functions:')
-    for(var p in mod) {
-      if (typeof mod[p] === 'function') {
-        console.log(`${mod}[${p}]`);
-      }
-    }
+    console.log( mod.run() );
   });
 </script>
 </body>
