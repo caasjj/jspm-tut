@@ -22,3 +22,6 @@ You can use any server you like, but `live-server` is really cool, as it has liv
 10. `live-server --port=8001` // in the root directory of your project
 
 This last command will open your default browser and serve your `index.html`.
+
+For using the repo with ES5/AMD only, to avoid transpilation, checkout the `no-transpile` branch.
+
