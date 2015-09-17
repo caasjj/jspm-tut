@@ -14,7 +14,7 @@ Or, to create it from scratch, do:
 6. `jspm init` // again, hit ENTER on all questions
 7. `jspm install bootstrap`
 8. `jspm install css`
-9. Create your `index.html` and `main.js` as shown/desired
+10. Create your `index.html` and `main.js` as shown/desired
 
 You can use any server you like, but `live-server` is really cool, as it has live reload:
 
@@ -24,4 +24,11 @@ You can use any server you like, but `live-server` is really cool, as it has liv
 This last command will open your default browser and serve your `index.html`.
 
 For using the repo with ES5/AMD only, to avoid transpilation, checkout the `no-transpile` branch.
+
+# Creating a Bundle
+
+1. jspm install npm:clean-css
+2. jspm bundle main.js bundle.js --inject
+
+Now, restart the server again, and you'll get the bundled `bundle.js`
 

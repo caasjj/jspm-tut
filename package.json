@@ -12,6 +12,7 @@
     "directories": {},
     "dependencies": {
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "clean-css": "npm:clean-css@^3.4.3",
       "css": "github:systemjs/plugin-css@^0.1.16",
       "jquery": "github:components/jquery@^2.1.4"
     },
@@ -20,5 +21,8 @@
       "babel-runtime": "npm:babel-runtime@^5.8.20",
       "core-js": "npm:core-js@^1.1.0"
     }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.2"
   }
 }
